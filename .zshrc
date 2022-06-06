@@ -71,8 +71,8 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
@@ -99,3 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export VIRTUAL_ENV_DISABLE_PROMPT=
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+bindkey "^[[H" beginning-of-line
+bindkey  "^[[F" end-of-line
